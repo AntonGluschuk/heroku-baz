@@ -12,7 +12,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: de58e1d6-a8b2-4d40-9418-612182acef32
+    secure: $HEROKU_TOKEN
   app:
     master: heroku-baz-prod
     develop: heroku-baz
