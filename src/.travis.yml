@@ -1,11 +1,15 @@
 language: node_js
-node_js:
-  - 12.16.1
-cache: npm
-
-install:
-  - npm ci
+node_js: node
 
 script:
   - npm test
-  - npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: de58e1d6-a8b2-4d40-9418-612182acef32
+  app:
+    master: heroku-baz-prod
+    develop: heroku-baz
+  on:
+    repo: AntonGluschuk/heroku-baz
+  skip_cleanup: "true"
