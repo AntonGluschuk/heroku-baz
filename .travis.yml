@@ -15,5 +15,5 @@ deploy:
     secure: P6Mm/lPyjQn3XDFgfAC972cSqEC9+i8kmpucd82e3MLCD7omRpWI7dYRBZlSi/EN0YQCBMPvgXG9aq/cyNA4sLYT8afRORNaxdEO4JYQqSH0ssD1PPlneoqcSvRfTS3JOkkM4hUKGBHHwAYYGwoMXV1vkG5piGuRPGmYtq5dgtCD/3nYFS7sJgovdYNVW4jdmMurzPBzSymPdtnKDdrjmDrbXF9nmwtjAMnFdbaHr4YDNKtWE1dAu4Z7B3OKWz/GcbFJunkWKmelnhWi5sVdRdP8rnORapxpPlbFVzWpChdlJ6XkZfIKMLmuoELntKNanI4C4txsYOgtrmmBnzX+7Q4SlyaqOsUU5Hxv8Na5KGZ8bdvhR321T+XeWlHPrzepi9Tl2R47JD7TUjeE1OL+UGzhuXatwkYiPq4w32K5b51HzKH66hAxs1yYLoIzWHycA/k2tfJyj/8E/jL5meHuu4v7skOG/j0O6mOE+OmMRVSOJZedFSnnA+DbOFAjiJ/onywpAk9opsj2DYr2gywCHQnIhTKUqghBAb/P+86DeIlJCQ857oY6W+JlRaFQ/aS+blbwbWIBvJupAfdfVAETSuocaPePyci+cZrlGp4igmCA27gYqUsec+REogBUTQHqjfzLm66HelqyEMsXic23aaCSFCN8pm0O+oW2BF208qw=
   app: heroku-baz
   on:
-    repo: AntonGluschuk/heroku-baz
+    branch: develop
   cleanup: "true"
