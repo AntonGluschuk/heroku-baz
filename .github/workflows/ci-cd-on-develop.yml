@@ -33,19 +33,7 @@ jobs:
           npm test
         env:
           CI: true
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Use source code
-        uses: actions/checkout@v1
-      - name: Install node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.16.1
       - name: Deploy on heroku
-        id: heroku
         uses: akhileshns/heroku-deploy@v3.6.8
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY2}}
