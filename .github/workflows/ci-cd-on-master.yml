@@ -33,9 +33,3 @@ jobs:
           npm test
         env:
           CI: true
-      - name: Deploy on heroku
-        uses: akhileshns/heroku-deploy@v3.6.8
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY2}}
-          heroku_app_name: "heroku-baz-prod"
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
