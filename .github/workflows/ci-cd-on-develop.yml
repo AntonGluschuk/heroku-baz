@@ -35,6 +35,7 @@ jobs:
           CI: true
       - name: Build the tagged Docker image
         run: docker build -f .docker/baz.Dockerfile -t baz .
+      - name: Deploy on heroku
         id: heroku
         uses: snithyanantham/docker-compose-multiple-apps-heroku-deploy@v1.0
         with:
