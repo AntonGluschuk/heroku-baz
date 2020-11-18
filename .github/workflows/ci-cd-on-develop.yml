@@ -1,9 +1,9 @@
 name: GitHub Actions CI/CD Heroku
 
 on:
-  pull_request:
+  push:
     branches:
-      - develop
+      - release
 
 jobs:
   build:
@@ -42,4 +42,4 @@ jobs:
           email: ${{ secrets.HEROKU_EMAIL }}
           api_key: ${{ secrets.HEROKU_API_KEY2 }}
           docker_compose_file: ".docker/docker-compose.yml"
-          heroku_apps: '[{"imagename":"baz","appname":"heroku-baz-release","apptype":"web"}]'
+          heroku_apps: '[{"imagename":"baz","appname":"heroku-baz","apptype":"web"}]'
